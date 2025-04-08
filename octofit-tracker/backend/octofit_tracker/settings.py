@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-24p@4=evj@9vx$&7z+6!(0bs6ar7jz-3k0k352osngqg_rg!)d"
+SECRET_KEY = "django-insecure-j!3!sk8ji2#v9yn8i5&xfmkzqyg2(p-8khro16xabc*2$))nax"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -37,10 +37,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'rest_framework',
-    'djongo',
-    'corsheaders',
-    'octofit_tracker',
+    "rest_framework",
+    "djongo",
+    "corsheaders",
+    "octofit_tracker",
 ]
 
 MIDDLEWARE = [
@@ -79,11 +79,11 @@ WSGI_APPLICATION = "octofit_tracker.wsgi.application"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'octofit_db',
-        'HOST': 'localhost',
-        'PORT': 27017,
+    "default": {
+        "ENGINE": "djongo",
+        "NAME": "octofit_db",
+        "HOST": "localhost",
+        "PORT": 27017,
     }
 }
 
