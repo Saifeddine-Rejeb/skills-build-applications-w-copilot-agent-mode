@@ -27,8 +27,9 @@ class Command(BaseCommand):
             {"_id": ObjectId(), "username": "sleeptoken", "email": "sleeptoken@mhigh.edu", "password": "sleeptokenpassword"},
         ])
 
-        db.teams.insert_one({"_id": ObjectId(), "name": "Blue Team", "members": ["thundergod", "metalgeek", "zerocool", "crashoverride", "sleeptoken"]})
-
+        users = db.users.find({}, {"_id": 1, "username": 1})
+        user_id_map = {user["username"]: user["_id"] for user in users}
+        db.teams.insert_one({"_id": ObjectId(), "name": "Blue Team", "members": [user_id_map["thundergod"], user_id_map["metalgeek"], user_id_map["zerocool"], user_id_map["crashoverride"], user_id_map["sleeptoken"]]})
         db.activity.insert_many([
             {"_id": ObjectId(), "user": "thundergod", "activity_type": "Cycling", "duration": 60},
             {"_id": ObjectId(), "user": "metalgeek", "activity_type": "Crossfit", "duration": 120},
