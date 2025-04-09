@@ -1,0 +1,144 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff; /* Default white background */
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #f8f9fa; /* Default light gray */
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #000000; /* Default black text */
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  color: #007bff; /* Bootstrap primary blue */
+  text-decoration: underline;
+}
+
+/* Logo styles */
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Component styles */
+h1 {
+  color: #000000; /* Default black */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  background-color: #ffffff; /* Default white background */
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+table th {
+  background-color: #f8f9fa; /* Default light gray */
+  color: #000000; /* Default black */
+}
+
+table tr:nth-child(even) {
+  background-color: #f8f9fa; /* Default light gray */
+}
+
+table tr:hover {
+  background-color: #e9ecef; /* Lighter gray */
+}
+
+/* Button styles */
+button {
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
+/* Link styles */
+a {
+  color: #007bff; /* Bootstrap primary blue */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue */
+  text-decoration: underline;
+}
+
+/* Favicon styles */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
